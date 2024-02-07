@@ -1,0 +1,138 @@
+:root {
+  --primary: #1f3e72;
+  --secondary: rgba(255, 255, 255, 0.78);
+  /* --black: rgb(142, 68, 142); */
+  /* --black:rgb(46, 134, 193); */
+  /* --black:rgb(20, 143, 119 ); */
+  /* --black:linear-gradient(to left, rgba(192,192,192), rgba(105,105,105)); */
+  /* --black:linear-gradient(to right top, #424848, #4b5253, #555c5f, #5f666a, #6a7076, #70777e, #767e85, #7c858d, #7d8b92, #7e9197, #7f969a, #829c9c); */
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --black:linear-gradient(to left,rgba(229,227,178,255),rgba(139,188,220,255));
+    animation: shimmer 2.5s infinite;
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --lightBlue: rgb(0,0,0,0.2);
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.wrapper{
+  background-color:black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.paddings {
+  padding: 1rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: black;
+  font-size: 0.9rem;
+}
+.orangeText {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
+}
+
+.button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: black;
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body{
+  scroll-behavior: smooth;
+}

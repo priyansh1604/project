@@ -1,0 +1,19 @@
+.App{
+  position: relative;
+  overflow-x: clip;
+  /* background-color:	rgb(220,220,220); */
+  background-color:linear-gradient(to left,rgba(229,227,178,255),rgba(139,188,220,255));
+}
+.App>:nth-child(1)
+{
+  background: var(--black);
+  position: relative;
+}
+.white-gradient{
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  /* background: beige; */
+  filter: blur(100px);
+  border-radius: 100px;
+}
